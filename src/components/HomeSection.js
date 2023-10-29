@@ -17,7 +17,7 @@ const HomeSection = () => {
             <span className={styles.redText}>IDE</span>
             <span>X</span>
           </h2>
-          <button></button>
+          <button className={styles.startButton}>INICIAR</button>
         </div>
       </div>
     </section>
