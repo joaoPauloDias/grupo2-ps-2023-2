@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1b1a1aa6;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header a {
+  font-size: large;
+  text-decoration: none;
+  color: white;
+}

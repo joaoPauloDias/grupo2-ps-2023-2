@@ -1,7 +1,11 @@
+import Header from '../components/Header';
+import HomeSection from '../components/HomeSection';
+
 export default function Home() {
   return (
-    <h1>
-      Olá, mundo!
-    </h1>
-  )
+    <>
+      <Header />
+      <HomeSection />
+    </>
+  );
 }

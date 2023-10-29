@@ -1,0 +1,52 @@
+.homeSection {
+  background: #603b88;
+  padding: 4rem 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentTitle {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+}
+
+.contentTitle h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.contentTitle span {
+  display: inline-block;
+}
+
+.redText {
+  color: #b22559;
+}
+
+.startButton {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  font-family: 'PixelatedFont';
+  background-color: transparent;
+  color: white;
+  border: 2px solid;
+  text-shadow: 2px 2px 0px #000000;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.startButton:hover {
+  transform: scale(1.1);
+}
