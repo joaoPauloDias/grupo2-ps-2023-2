@@ -4,11 +4,11 @@
 }
 
 .content {
-  max-width: 800px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
 }
+
 .contentTitle {
   padding: 0 2rem;
   display: flex;
