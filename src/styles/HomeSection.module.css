@@ -1,0 +1,35 @@
+.homeSection {
+  background: #603b88;
+  padding: 4rem 0;
+}
+
+.content {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.contentTitle {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentTitle p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.contentTitle h2 {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.contentTitle span {
+  display: inline-block;
+}
+
+.redText {
+  color: #b22559;
+}
