@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import styles from '../styles/HomeSection.module.css';
-import Container from './Container';
-const HomeSection = () => {
+import styles from '@/styles/sections/Home.module.css';
+import Container from '@/components/Container';
+const Home = () => {
   return (
     <section className={styles.homeSection}>
       <Container>
@@ -25,4 +25,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default Home;

@@ -1,11 +1,12 @@
-import Header from '../components/Header';
-import HomeSection from '../components/HomeSection';
-
-export default function Home() {
+import Header from '@/components/Header';
+import Home from '@/components/sections/Home';
+import Starters from '@/components/sections/Starters';
+export default function Index() {
   return (
     <>
       <Header />
-      <HomeSection />
+      <Home />
+      <Starters />
     </>
   );
 }
