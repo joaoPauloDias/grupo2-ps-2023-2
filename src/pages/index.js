@@ -1,7 +1,8 @@
 import Header from '../components/Header';
 import HomeSection from '../components/HomeSection';
-import AboutUsSection from '../components/AboutUsSection';
+
 import SendMassage from '../components/SendMassage';
+import FooterSection from '../components/FooterSection';
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
       <Header />
       <HomeSection />
 
-      <AboutUsSection />
       <SendMassage />
+      <FooterSection />
     </>
   );
 }

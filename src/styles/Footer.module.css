@@ -1,0 +1,22 @@
+.footer {
+    background-color: #333; /* Fundo cinza */
+    color: #fff; /* Cor do texto no footer */
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container img {
+    max-width: 10px; /* Ajuste o tamanho das logos conforme necessário */
+    margin: 0 10px; /* Espaçamento entre as logos */
+}
+
+.terms p {
+    margin: 10px 0; /* Espaçamento entre os termos de uso */
+}
