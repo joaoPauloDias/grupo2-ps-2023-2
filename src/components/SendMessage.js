@@ -8,11 +8,8 @@ const SendMessage = () => {
   const [senhaCartao, setSenhaCartao] = useState('');
 
   const handleEnviarClick = () => {
-    // Lógica para enviar a mensagem, se necessário.
-    // Você pode redirecionar para o topo da página assim:
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Limpa os campos após o envio
     setPokemonFavorito('');
     setMensagem('');
     setEmail('');
