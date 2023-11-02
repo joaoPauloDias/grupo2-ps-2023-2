@@ -127,3 +127,10 @@ table {
 body {
   font-family: 'PixelatedFont';
 }
+
+:root {
+  --main-color: #603b88;
+  --water: #3b6388;
+  --plant: #3b8863;
+  --fire: #ad3f3f;
+}

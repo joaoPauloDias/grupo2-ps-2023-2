@@ -1,5 +1,5 @@
 .homeSection {
-  background: #603b88;
+  background: var(--main-color);
   padding: 4rem 0;
 }
 
