@@ -126,6 +126,7 @@ table {
 
 body {
   font-family: 'PixelatedFont';
+  box-sizing: border-box;
 }
 
 :root {
