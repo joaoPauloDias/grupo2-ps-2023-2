@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from '@/styles/sections/Home.module.css';
 import Container from '@/components/Container';
+import ContainerBorder from '../ContainerBorder';
 const Home = () => {
   return (
     <section className={styles.homeSection}>
@@ -17,7 +18,11 @@ const Home = () => {
               <span className={styles.redText}>IDE</span>
               <span>X</span>
             </h2>
-            <button className={styles.startButton}>START</button>
+            <div className={styles.buttonContainer}>
+              <ContainerBorder color="white">
+                <button className={styles.startButton}>START</button>
+              </ContainerBorder>
+            </div>
           </div>
         </div>
       </Container>

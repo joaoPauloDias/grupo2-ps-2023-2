@@ -23,6 +23,7 @@
   font-size: 5rem;
   color: white;
   text-shadow: 2px 2px 0px #000000;
+  margin-bottom: 1.5rem;
 }
 
 .contentTitle span {
@@ -34,19 +35,22 @@
 }
 
 .startButton {
-  margin-top: 1rem;
   padding: 1.5rem;
   font-size: 1.5rem;
   width: 100%;
+  height: 100%;
   font-family: 'PixelatedFont';
   background-color: transparent;
   color: white;
-  border: 2px solid;
+  border: none;
   text-shadow: 2px 2px 0px #000000;
-  border-radius: 16px;
   cursor: pointer;
 }
 
-.startButton:hover {
+.buttonContainer {
+  width: 100%;
+  height: 100%;
+}
+.buttonContainer:hover {
   transform: scale(1.1);
 }

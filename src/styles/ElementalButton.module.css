@@ -15,9 +15,7 @@
 .rectangle {
   display: flex;
   padding: 0.5rem 0rem;
-  border-radius: 16px;
   width: 100%;
-  border: 2px solid;
   justify-content: center;
   align-items: center;
   image-rendering: pixelated;

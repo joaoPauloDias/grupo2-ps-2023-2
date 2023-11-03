@@ -5,15 +5,20 @@
 .mainDiv {
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 1rem;
   width: 100%;
   height: 600px;
 }
 
-.mainDiv * {
+.title {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 2rem;
+}
+/* .mainDiv * {
   border: 2px solid;
   color: black;
-}
+} */
 
 .subDiv1,
 .subDiv2 {
@@ -21,11 +26,11 @@
   display: flex;
 }
 .subDiv1 {
-  height: 40%;
+  height: 55%;
 }
 
 .subDiv2 {
-  height: 30%;
+  height: 20%;
 }
 
 .innerDiv1,
@@ -35,10 +40,25 @@
 
 .innerDiv1 {
   width: 40%;
-  background-color: #f7f7f7;
 }
 
 .innerDiv2 {
   width: 60%;
-  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerDiv1imageContainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  border-right: var(--default-border-width) solid;
+}
+.innerDiv1imageContainer h2 {
+  font-size: medium;
+  color: var(--main-color);
 }

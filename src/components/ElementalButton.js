@@ -1,5 +1,6 @@
 import styles from '@/styles/ElementalButton.module.css';
 import React from 'react';
+import ContainerBorder from './ContainerBorder';
 const ElementalButton = ({ component, color, title, link }) => {
   return (
     <>
@@ -7,9 +8,11 @@ const ElementalButton = ({ component, color, title, link }) => {
         <div className={styles.title} style={{ color: color }}>
           {title}
         </div>
-        <div className={styles.rectangle} style={{ color: color }}>
-          {React.cloneElement(component, { fill: color })}
-        </div>
+        <ContainerBorder color={color}>
+          <div className={styles.rectangle} style={{ color: color }}>
+            {React.cloneElement(component, { fill: color })}
+          </div>
+        </ContainerBorder>
       </a>
     </>
   );
