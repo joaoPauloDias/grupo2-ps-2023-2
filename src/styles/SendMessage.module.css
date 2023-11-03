@@ -6,25 +6,29 @@
   
 .titulo {
     font-size: 24px;
+    color: purple;
 }
   
 .retangulo {
     background-color: white;
     border: 2px solid purple;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
 }
   
 .input {
+    color: purple;
     width: 100%;
     border: none;
     outline: none;
 }
   
 .botao {
+    font-size: 20px;
     background-color: white;
     border: 2px solid purple;
-    padding: 10px 20px;
+    color: purple;
+    padding: 10px 300px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

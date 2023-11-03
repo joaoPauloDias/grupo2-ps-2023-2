@@ -18,7 +18,7 @@ const SendMessage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.titulo}>Envie uma mensagem para nós</h1>
+      <h1 className={styles.titulo}>Envie uma mensagem para nós:</h1>
       <div className={styles.retangulo}>
         <input
           className={styles.input}
