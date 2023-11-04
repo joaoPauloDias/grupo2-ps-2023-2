@@ -3,7 +3,7 @@ import Home from '@/components/sections/Home';
 import Starters from '@/components/sections/Starters';
 import AboutUs from '@/components/sections/AboutUs';
 import SendMessage from '@/components/sections/SendMessage';
-import Footer from '@/components/sections/Footer';
+import Footer from '@/components/Footer';
 
 export default function Index() {
   return (

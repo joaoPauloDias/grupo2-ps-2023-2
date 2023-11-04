@@ -1,7 +1,7 @@
 .footer-content {
   background-color: var(--dark-gray);
   color: #fff;
-  padding: 30px 0;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,11 @@
 }
 
 .logo-conteiner img {
-  margin-right: 20px;
+  margin: 0 8px;
+}
+.logo-conteiner :hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .terms h1 {
