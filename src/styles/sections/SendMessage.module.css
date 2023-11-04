@@ -38,12 +38,14 @@
   color: var(--main-color);
   padding: 10px 300px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+
   font-family: 'PixelatedFontLight';
 }
 
 .botao:hover {
   background-color: var(--main-color);
+  color: white;
 }
 
 .errorMessage {
