@@ -8,6 +8,7 @@ import {
   getBorderClassByType,
 } from '@/utils/borderUtils';
 import PokemonDisplay from '../PokemonDisplay';
+import InfoDisplay from '../InfoDisplay';
 const Starters = ({ type }) => {
   return (
     <section className={styles.startersSection}>
@@ -30,7 +31,9 @@ const Starters = ({ type }) => {
                 />
               </div> */}
             </div>
-            <div className={styles.innerDiv2}></div>
+            <div className={styles.innerDiv2}>
+              <InfoDisplay type="AGUA" />
+            </div>
           </div>
           <div className={styles.subDiv2}>
             <div className={styles.innerDiv1}>
