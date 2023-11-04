@@ -1,16 +1,20 @@
 import styles from '@/styles/ContainterStarter.module.css';
-import React from 'react';
-import ContainerBorder from './ContainerBorder';
-const ContainerStarter = ({ children, color, bold }) => {
-  const border = bold ? 'var(--default-border-width)' : '10px';
+import borderstyles from '@/styles/borders.module.css';
+import {
+  getBorderClassByColor,
+  getBorderClassByType,
+} from '@/utils/borderUtils';
 
+const ContainerStarter = ({ children, type }) => {
   return (
     <div className={styles.container}>
-      <ContainerBorder color={color}>
-        <div className={styles.containerStarter} style={{ color: color }}>
-          {children}
-        </div>
-      </ContainerBorder>
+      <div
+        className={`${styles.containerStarter} ${
+          borderstyles.pixelCornersWrapper
+        } ${getBorderClassByType(type)}`}
+      >
+        {children}
+      </div>
     </div>
   );
 };
