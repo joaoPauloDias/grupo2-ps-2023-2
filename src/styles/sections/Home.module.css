@@ -31,7 +31,7 @@
 }
 
 .redText {
-  color: #b22559;
+  color: var(--wine);
 }
 
 .startButton {

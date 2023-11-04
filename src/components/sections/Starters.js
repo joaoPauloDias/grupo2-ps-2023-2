@@ -12,15 +12,15 @@ import React, { useState } from 'react';
 const Starters = () => {
   const [type, setType] = useState();
   return (
-    <section className={styles.startersSection}>
+    <section id="starters" className={styles.startersSection}>
       <Container>
-        <h2
-          className={`${styles.title} ${!type ? styles.textCenter : ''}`}
-          style={{ color: getColorByType(type) }}
-        >
-          {type ? type : `CONHECENDO OS STARTERS`}
-        </h2>
         <div className={styles.mainDiv}>
+          <h2
+            className={`${styles.title} ${!type ? styles.textCenter : ''}`}
+            style={{ color: getColorByType(type) }}
+          >
+            {type ? type : `CONHECENDO OS STARTERS`}
+          </h2>
           <div
             className={`${styles.subDiv1} ${
               type ? '' : borderstyles.pixelCornersWrapper

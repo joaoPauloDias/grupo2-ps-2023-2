@@ -10,18 +10,14 @@ const AboutUs = () => {
             <h2>SOBRE NOS</h2>
             <div className={styles.textformat}>
               <p>
-                A IDE é a empresa júnior dos cursos <br />
-                Ciência e Engenharia da Computação da <br />
-                Universidade Federal do Rio Grande do  <br />
-                Sul. Formada por alunos interessados em <br />
-                se tornarem empreendedores e <br />
-                profissionais excepcionais, a IDE fornece <br />
-                soluções em software, como sites e <br />
-                sistemas, com preços abaixo do <br />
-                mercado, aliados à excelência da UFRGS, <br />
-                o Instituto de Informática e seus <br />
-                professores, que fornecem apoio técnico <br />
-                e aconselhamento aos estudantes.
+                A IDE é a empresa júnior dos cursos Ciência e Engenharia da
+                Computação da Universidade Federal do Rio Grande do Sul. Formada
+                por alunos interessados em se tornarem empreendedores e
+                profissionais excepcionais, a IDE fornece soluções em software,
+                como sites e sistemas, com preços abaixo do mercado, aliados à
+                excelência da UFRGS, o Instituto de Informática e seus
+                professores, que fornecem apoio técnico e aconselhamento aos
+                estudantes.
               </p>
               <img
                 src="/img/ide-logo.png"

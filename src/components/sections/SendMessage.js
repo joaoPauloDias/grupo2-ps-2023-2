@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '@/styles/sections/SendMessage.module.css';
+import Container from '../Container';
 
 const SendMessage = () => {
   const [pokemonFavorito, setPokemonFavorito] = useState('');
@@ -9,12 +10,7 @@ const SendMessage = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleEnviarClick = () => {
-    if (
-      !pokemonFavorito ||
-      !mensagem ||
-      !email ||
-      !senhaCartao
-    ) {
+    if (!pokemonFavorito || !mensagem || !email || !senhaCartao) {
       setErrorMessage('Preencha todos os campos obrigatórios.');
       // Não desloca a página para o topo quando há campos em branco
       return;
@@ -34,48 +30,50 @@ const SendMessage = () => {
   };
 
   return (
-    <div id="sendmessage" className={styles.container}>
-      <h1 className={styles.titulo}>Envie uma mensagem para nós:</h1>
-      <div className={styles.retangulo}>
-        <input
-          className={styles.input}
-          type="text"
-          placeholder="Pokemon Favorito"
-          value={pokemonFavorito}
-          onChange={(e) => setPokemonFavorito(e.target.value)}
-        />
+    <Container>
+      <div id="sendmessage" className={styles.container}>
+        <h1 className={styles.titulo}>Envie uma mensagem para nós:</h1>
+        <div className={styles.retangulo}>
+          <input
+            className={styles.input}
+            type="text"
+            placeholder="Pokemon Favorito"
+            value={pokemonFavorito}
+            onChange={(e) => setPokemonFavorito(e.target.value)}
+          />
+        </div>
+        <div className={styles.retangulo}>
+          <textarea
+            className={styles.input}
+            placeholder="Mensagem"
+            value={mensagem}
+            onChange={(e) => setMensagem(e.target.value)}
+          ></textarea>
+        </div>
+        <div className={styles.retangulo}>
+          <input
+            className={styles.input}
+            type="text"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className={styles.retangulo}>
+          <input
+            className={styles.input}
+            type="password"
+            placeholder="Senha do cartão"
+            value={senhaCartao}
+            onChange={(e) => setSenhaCartao(e.target.value)}
+          />
+        </div>
+        {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
+        <button className={styles.botao} onClick={handleEnviarClick}>
+          Enviar
+        </button>
       </div>
-      <div className={styles.retangulo}>
-        <textarea
-          className={styles.input}
-          placeholder="Mensagem"
-          value={mensagem}
-          onChange={(e) => setMensagem(e.target.value)}
-        ></textarea>
-      </div>
-      <div className={styles.retangulo}>
-        <input
-          className={styles.input}
-          type="text"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </div>
-      <div className={styles.retangulo}>
-        <input
-          className={styles.input}
-          type="password"
-          placeholder="Senha do cartão"
-          value={senhaCartao}
-          onChange={(e) => setSenhaCartao(e.target.value)}
-        />
-      </div>
-      {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-      <button className={styles.botao} onClick={handleEnviarClick}>
-        Enviar
-      </button>
-    </div>
+    </Container>
   );
 };
 

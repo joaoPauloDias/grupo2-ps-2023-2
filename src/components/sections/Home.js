@@ -1,6 +1,7 @@
 import styles from '@/styles/sections/Home.module.css';
 import Container from '@/components/Container';
 import borderstyles from '@/styles/borders.module.css';
+import Link from 'next/link';
 const Home = () => {
   return (
     <section className={styles.homeSection}>
@@ -20,7 +21,9 @@ const Home = () => {
             <div
               className={` ${borderstyles.pixelCornersWrapper} ${borderstyles.white} ${styles.buttonContainer}`}
             >
-              <button className={styles.startButton}>START</button>
+              <Link href="#starters">
+                <button className={styles.startButton}>START</button>
+              </Link>
             </div>
           </div>
         </div>
