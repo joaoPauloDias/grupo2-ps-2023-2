@@ -12,4 +12,5 @@ export function getColorByType(type) {
   if (type === 'AGUA') return '#3B6388';
   else if (type === 'FOGO') return '#AD3F3F';
   else if (type === 'PLANTA') return '#3B8863';
+  else return '#603B88';
 }

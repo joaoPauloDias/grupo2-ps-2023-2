@@ -4,9 +4,21 @@ import React from 'react';
 const ElementalButtonContainer = ({ type }) => {
   return (
     <div className={styles.buttonContainer}>
-      <ElementalButton type="AGUA" link="https://example.com" />
-      <ElementalButton type="PLANTA" link="https://example.com" />
-      <ElementalButton type="FOGO" link="https://example.com" />
+      <ElementalButton
+        color_type={type}
+        symbol_type="AGUA"
+        link="https://example.com"
+      />
+      <ElementalButton
+        color_type={type}
+        symbol_type="PLANTA"
+        link="https://example.com"
+      />
+      <ElementalButton
+        color_type={type}
+        symbol_type="FOGO"
+        link="https://example.com"
+      />
     </div>
   );
 };
