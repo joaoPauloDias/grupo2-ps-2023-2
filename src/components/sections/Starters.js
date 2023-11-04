@@ -30,10 +30,10 @@ const Starters = () => {
           </div>
           <div className={styles.subDiv2}>
             <div className={styles.innerDiv1}>
-              <ElementalButtonContainer color={color} />
+              <ElementalButtonContainer />
             </div>
             <div className={styles.innerDiv2}>
-              <ContainerStarter color={color}>
+              <ContainerStarter>
                 <img
                   src="/img/logo-pixelado-roxo.png"
                   alt="Logo Pixelado Roxo"

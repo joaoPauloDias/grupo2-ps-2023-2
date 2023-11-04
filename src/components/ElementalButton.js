@@ -5,7 +5,7 @@ import { getSvgComponentByType, getColorByType } from '@/utils/typeUtils';
 import borderstyles from '@/styles/borders.module.css';
 
 const ElementalButton = ({ symbol_type, color_type, link }) => {
-  const marked = symbol_type == color_type;
+  const marked = symbol_type === color_type;
   const color = getColorByType(color_type);
   return (
     <>
