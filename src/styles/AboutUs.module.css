@@ -6,16 +6,16 @@
 .content {
   display: flex;
   justify-content: space-between; 
-  align-items: center;
 }
 
 .textformat{
   display: flex;
+  width: 95%;
   flex-direction: column;
   background: black;
-  padding: 60px 40px;
-  max-width: 200%;
+  padding: 45px 60px;
   align-items: center;
+  position: relative;
 
 }
 
@@ -25,15 +25,16 @@
 }
 
 .textContent h2 {
-  margin: 20px 0 40px;
+  margin: 20px 0 20px;
   font-size: 2.5rem; 
 }
 
 .textContent p {
-  font-size: 0.5rem; 
+  font-size: 0.7rem; 
+  width: 120%;
   line-height: 1.5; 
   margin-bottom: 20px;
-  max-width: 150%;
+  max-width: 200%;
 }
 
 .imgWrapper {
@@ -41,7 +42,7 @@
 }
 
 .imgIDE {
-  max-width: 20%;
+  max-width: 15%;
   display: flex;
   flex-direction: row-reverse;
   margin-top: 20px;
