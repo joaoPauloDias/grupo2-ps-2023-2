@@ -1,0 +1,49 @@
+.aboutussection {
+    background: #603b88; 
+    padding: 4rem 4rem;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .textformat{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    background: black;
+    padding: 45px 60px;
+    align-items: center;
+    position: relative;
+  
+  }
+  
+  .textContent {
+    width: 50%; 
+    color: white; 
+  }
+  
+  .textContent h2 {
+    margin: 20px 0 20px;
+    font-size: 2.5rem; 
+  }
+  
+  .textContent p {
+    font-size: 0.7rem; 
+    width: 120%;
+    line-height: 1.5; 
+    margin-bottom: 20px;
+    max-width: 200%;
+  }
+  
+  .imgWrapper {
+    max-width: 30%;
+  }
+  
+  .imgIDE {
+    max-width: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+  }
