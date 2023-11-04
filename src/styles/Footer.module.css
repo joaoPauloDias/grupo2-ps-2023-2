@@ -1,0 +1,39 @@
+.footer-content {
+  background-color: var(--dark-gray);
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'PixelatedFontLight';
+}
+
+.logo-conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-conteiner img {
+  margin: 0 8px;
+}
+.logo-conteiner :hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.terms h1 {
+  font-size: small;
+  margin: 5px 0;
+}
+
+.terms h2 {
+  font-size: 10px;
+  margin: 5px 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.ide-logo {
+  display: flex;
+  margin-left: auto;
+}

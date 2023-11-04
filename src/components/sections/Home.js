@@ -1,7 +1,8 @@
-import Image from 'next/image';
-import styles from '../styles/HomeSection.module.css';
-import Container from './Container';
-const HomeSection = () => {
+import styles from '@/styles/sections/Home.module.css';
+import Container from '@/components/Container';
+import borderstyles from '@/styles/borders.module.css';
+import Link from 'next/link';
+const Home = () => {
   return (
     <section className={styles.homeSection}>
       <Container>
@@ -17,7 +18,13 @@ const HomeSection = () => {
               <span className={styles.redText}>IDE</span>
               <span>X</span>
             </h2>
-            <button className={styles.startButton}>START</button>
+            <div
+              className={` ${borderstyles.pixelCornersWrapper} ${borderstyles.white} ${styles.buttonContainer}`}
+            >
+              <Link href="#starters">
+                <button className={styles.startButton}>START</button>
+              </Link>
+            </div>
           </div>
         </div>
       </Container>
@@ -25,4 +32,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default Home;

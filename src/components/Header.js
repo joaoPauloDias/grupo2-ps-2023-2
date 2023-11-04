@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/Header.module.css';
+import styles from '@/styles/Header.module.css';
 
 const Header = () => {
   return (
@@ -10,13 +10,13 @@ const Header = () => {
             <Link href="/">HOME</Link>
           </li>
           <li>
-            <Link href="/iniciais">INICIAIS</Link>
+            <Link href="#starters">INICIAIS</Link>
           </li>
           <li>
-            <Link href="/sobre">SOBRE</Link>
+            <Link href="#aboutus">SOBRE</Link>
           </li>
           <li>
-            <Link href="/formulario">FORMULARIO</Link>
+            <Link href="#sendmessage">FORMULARIO</Link>
           </li>
         </ul>
       </nav>

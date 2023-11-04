@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  width: 25%;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  transition: transform 0.3s ease;
+}
+
+.title {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.rectangle {
+  display: flex;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  image-rendering: pixelated;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}

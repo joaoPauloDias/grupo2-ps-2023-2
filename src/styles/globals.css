@@ -124,6 +124,25 @@ table {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'PixelatedFontLight';
+  src: url('../../public/fonts/uni05_53.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'PixelatedFont';
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #603b88;
+  --dark-gray: #242424;
+  --wine: #b22559;
+  --water: #3b6388;
+  --plant: #3b8863;
+  --fire: #ad3f3f;
+  --default-border-radius: 16px;
+  --default-border-width: 3px;
 }

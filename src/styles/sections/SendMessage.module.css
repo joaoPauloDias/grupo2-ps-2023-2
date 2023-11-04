@@ -1,0 +1,51 @@
+.container {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo {
+  font-family: 'PixelatedFontLight';
+
+  font-size: 24px;
+  color: var(--main-color);
+}
+
+.retangulo {
+  background-color: white;
+  border: 2px solid var(--main-color);
+  padding: 5px;
+  margin: 5px;
+}
+
+.input {
+  color: var(--main-color);
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: 'PixelatedFontLight';
+  resize: none;
+}
+
+.input::placeholder {
+  color: var(--main-color);
+}
+
+.botao {
+  font-size: 20px;
+  background-color: white;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  padding: 10px 300px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'PixelatedFontLight';
+}
+
+.botao:hover {
+  background-color: var(--main-color);
+}
+
+.errorMessage {
+  color: var(--fire);
+}
