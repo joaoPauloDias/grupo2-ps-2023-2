@@ -36,3 +36,7 @@
 .botao:hover {
     background-color: purple;
 }
+
+.errorMessage {
+    color: red;
+  }

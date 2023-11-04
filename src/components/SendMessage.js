@@ -6,14 +6,31 @@ const SendMessage = () => {
   const [mensagem, setMensagem] = useState('');
   const [email, setEmail] = useState('');
   const [senhaCartao, setSenhaCartao] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleEnviarClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (
+      !pokemonFavorito ||
+      !mensagem ||
+      !email ||
+      !senhaCartao
+    ) {
+      setErrorMessage('Preencha todos os campos obrigatórios.');
+      // Não desloca a página para o topo quando há campos em branco
+      return;
+    }
 
+    // Limpa a mensagem de erro
+    setErrorMessage('');
+
+    // Limpa os campos após o envio
     setPokemonFavorito('');
     setMensagem('');
     setEmail('');
     setSenhaCartao('');
+
+    // Desloca a página para o topo
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -54,6 +71,7 @@ const SendMessage = () => {
           onChange={(e) => setSenhaCartao(e.target.value)}
         />
       </div>
+      {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
       <button className={styles.botao} onClick={handleEnviarClick}>
         Enviar
       </button>
