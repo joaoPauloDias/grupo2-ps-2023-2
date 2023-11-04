@@ -5,6 +5,8 @@
 }
 
 .titulo {
+  font-family: 'PixelatedFontLight';
+
   font-size: 24px;
   color: var(--main-color);
 }
@@ -21,26 +23,28 @@
   width: 100%;
   border: none;
   outline: none;
+  font-family: 'PixelatedFontLight';
 }
 
 .input::placeholder {
-  color: purple;
+  color: var(--main-color);
 }
 
 .botao {
   font-size: 20px;
   background-color: white;
-  border: 2px solid purple;
-  color: purple;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
   padding: 10px 300px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'PixelatedFontLight';
 }
 
 .botao:hover {
-  background-color: purple;
+  background-color: var(--main-color);
 }
 
 .errorMessage {
-  color: red;
+  color: var(--fire);
 }

@@ -50,6 +50,7 @@
 .buttonContainer {
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease;
 }
 .buttonContainer:hover {
   transform: scale(1.1);
