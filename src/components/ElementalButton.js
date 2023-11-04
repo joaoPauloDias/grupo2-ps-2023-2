@@ -4,14 +4,22 @@ import { getBorderClassByType } from '@/utils/borderUtils';
 import { getSvgComponentByType, getColorByType } from '@/utils/typeUtils';
 import borderstyles from '@/styles/borders.module.css';
 
-const ElementalButton = ({ symbol_type, color_type, link }) => {
+const ElementalButton = ({ symbol_type, color_type, setType }) => {
   const marked = symbol_type === color_type;
   const color = getColorByType(color_type);
+
+  const handleClick = (newType) => {
+    setType(newType);
+  };
+
   return (
     <>
-      <a href={link} className={styles.container}>
+      <button
+        onClick={() => handleClick(symbol_type)}
+        className={styles.container}
+      >
         <div className={styles.title} style={{ color: color }}>
-          {symbol_type}
+          {!color_type ? symbol_type : ''}
         </div>
         <div
           className={`${styles.rectangle}  ${
@@ -23,7 +31,7 @@ const ElementalButton = ({ symbol_type, color_type, link }) => {
             fill: marked ? 'white' : color,
           })}
         </div>
-      </a>
+      </button>
     </>
   );
 };

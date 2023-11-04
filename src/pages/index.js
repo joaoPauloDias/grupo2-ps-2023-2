@@ -6,7 +6,7 @@ export default function Index() {
     <>
       <Header />
       <Home />
-      <Starters />
+      <Starters type="AGUA" />
     </>
   );
 }
