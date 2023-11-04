@@ -13,10 +13,10 @@ const Header = () => {
             <Link href="/iniciais">INICIAIS</Link>
           </li>
           <li>
-            <Link href="/sobre">SOBRE</Link>
+            <Link href="#aboutus">SOBRE</Link>
           </li>
           <li>
-            <Link href="/formulario">FORMULARIO</Link>
+            <Link href="#sendmessage">FORMULARIO</Link>
           </li>
         </ul>
       </nav>
