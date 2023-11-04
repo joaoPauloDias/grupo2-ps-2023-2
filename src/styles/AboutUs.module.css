@@ -10,7 +10,7 @@
 
 .textformat{
   display: flex;
-  width: 95%;
+  width: 75%;
   flex-direction: column;
   background: black;
   padding: 45px 60px;
