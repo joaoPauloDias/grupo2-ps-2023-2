@@ -22,6 +22,10 @@
     border: none;
     outline: none;
 }
+
+.input::placeholder{
+    color: purple;
+}
   
 .botao {
     font-size: 20px;
