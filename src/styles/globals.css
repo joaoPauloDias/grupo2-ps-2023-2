@@ -124,6 +124,13 @@ table {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'PixelatedFontLight';
+  src: url('../../public/fonts/uni05_53.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'PixelatedFont';
   box-sizing: border-box;

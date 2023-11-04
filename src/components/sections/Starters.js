@@ -8,7 +8,7 @@ import {
   getBorderClassByType,
 } from '@/utils/borderUtils';
 import PokemonDisplay from '../PokemonDisplay';
-const Starters = () => {
+const Starters = ({ type }) => {
   return (
     <section className={styles.startersSection}>
       <Container>

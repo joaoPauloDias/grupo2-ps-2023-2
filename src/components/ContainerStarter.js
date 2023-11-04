@@ -3,12 +3,12 @@ import borderstyles from '@/styles/borders.module.css';
 import { getBorderClassByType } from '@/utils/borderUtils';
 import pokemonData from '@content/pokemons.json';
 
-const ContainerStarter = ({ type, bold }) => {
+const ContainerStarter = ({ type }) => {
   let content;
 
   if (type) {
     const { description } = pokemonData[type];
-    content = <p>{description}</p>;
+    content = <p className={styles.description}>{description}</p>;
   } else {
     content = (
       <img
@@ -23,7 +23,7 @@ const ContainerStarter = ({ type, bold }) => {
     <div className={styles.container}>
       <div
         className={`${styles.containerStarter} ${
-          bold
+          type
             ? borderstyles.pixelCornersDescriptionWrapper
             : borderstyles.pixelCornersWrapper
         } ${getBorderClassByType(type)}`}
