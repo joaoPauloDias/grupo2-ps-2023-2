@@ -1,0 +1,14 @@
+.wrapper {
+  width: 85px;
+  height: 85px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper img {
+  height: 80%;
+  width: 80%;
+  object-fit: contain;
+}

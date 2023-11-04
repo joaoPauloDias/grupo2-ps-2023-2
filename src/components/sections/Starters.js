@@ -3,9 +3,12 @@ import borderstyles from '@/styles/borders.module.css';
 import Container from '@/components/Container';
 import ElementalButtonContainer from '../ElementalButtonContainer';
 import ContainerStarter from '../ContainerStarter';
-import { getBorderClassByColor } from '@/utils/borderUtils';
+import {
+  getBorderClassByColor,
+  getBorderClassByType,
+} from '@/utils/borderUtils';
+import PokemonDisplay from '../PokemonDisplay';
 const Starters = () => {
-  const color = '#603b88';
   return (
     <section className={styles.startersSection}>
       <Container>
@@ -14,17 +17,18 @@ const Starters = () => {
           <div
             className={`${styles.subDiv1} ${
               borderstyles.pixelCornersWrapper
-            } ${getBorderClassByColor(color)}`}
+            } ${getBorderClassByType()}`}
           >
             <div className={`${styles.innerDiv1} `}>
-              <div className={styles.innerDiv1imageContainer}>
+              <PokemonDisplay type="FOGO" />
+              {/* <div className={styles.innerDiv1imageContainer}>
                 <h2>ESCOLHA UM!</h2>
                 <img
                   src="/img/neko-dormindo.png"
                   alt="Neko Dormindo"
                   style={{ width: '40%' }}
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.innerDiv2}></div>
           </div>
@@ -33,13 +37,7 @@ const Starters = () => {
               <ElementalButtonContainer />
             </div>
             <div className={styles.innerDiv2}>
-              <ContainerStarter>
-                <img
-                  src="/img/logo-pixelado-roxo.png"
-                  alt="Logo Pixelado Roxo"
-                  style={{ width: '12%' }}
-                />
-              </ContainerStarter>
+              <ContainerStarter type="AGUA" />
             </div>
           </div>
         </div>

@@ -1,0 +1,9 @@
+.display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  align-content: space-around;
+  justify-content: space-around;
+}
